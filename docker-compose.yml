@@ -1,0 +1,11 @@
+version: "3"
+services:
+  java-web:
+    image: 142390311734.dkr.ecr.ap-south-1.amazonaws.com/java-app:VERSION
+    ports:
+    - 8080:8080
+    networks:
+    - mavenappbridge
+networks:
+  mavenappbridge:
+   driver: bridge
